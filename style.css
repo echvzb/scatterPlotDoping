@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap');
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b0bec5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    background: #EFECEA;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.bar {
+    fill: #A0B700;
+}
+
+.bar:hover {
+    fill: #5C8100;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.title-container {
+    background: #F5F3F2;
+}
+
+html {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.domain,
+.tick line {
+    stroke: #C0C0BB;
+}
+
+text {
+    font-size: 12px;
+    fill: #635F5D;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.info {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.tick text {
+    font-weight: 700;
+}
+
+div.tooltip{
+    position: absolute;			
+    text-align: center;	
+    font-weight: 300;		
+    width: 150px;					
+    padding: 10px;
+    font-size: 16px;
+    color:#fff;		
+    background: #635F5D;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;	
+}
