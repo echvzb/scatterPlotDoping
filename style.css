@@ -5,7 +5,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #b0bec5;
+    background: #d7ccc8;
 }
 
 * {
@@ -17,14 +17,18 @@ svg {
     background: #EFECEA;
 }
 
-.bar {
-    fill: #A0B700;
+.point{
+    opacity: 0.5;
 }
-
-.bar:hover {
-    fill: #5C8100;
+.point:hover{
+    opacity: 1;
 }
-
+.doping{
+    fill: #137B80; 
+}
+.no-doping{
+    fill:#E6842A;
+}
 .title {
     font-size: 30px;
     font-weight: 700;
@@ -62,11 +66,9 @@ div.tooltip, svg{
 }
 div.tooltip{
     position: absolute;			
-    text-align: center;	
     font-weight: 300;		
-    width: 150px;					
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
     color:#fff;		
     background: #635F5D;	
     border: 0px;		
