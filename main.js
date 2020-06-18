@@ -119,13 +119,18 @@ const render = (data) => {
     .append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
-
+  svg
+    .append("text")
+    .text(title)
+    .attr("class", "title")
+    .attr("x", 44)
+    .attr("y", 50);
+  
   g.selectAll("circle")
     .data(dataSet)
     .enter()
     .append("circle")
     .attr("cx", (d) => xScale(xValue(d)))
-    .attr("r", pointRadius)
     .attr("cy", (d) => yScale(yValue(d)))
     .attr("class", (d) => changeColor(d))
     .on("mouseover", (d) => {
@@ -137,14 +142,11 @@ const render = (data) => {
     })
     .on("mouseout", (d) => {
       div.transition().duration(500).style("opacity", 0);
-    });
+    })
+    .transition().duration(1700)
+      .attr("r", pointRadius);
+    
 
-  svg
-    .append("text")
-    .text(title)
-    .attr("class", "title")
-    .attr("x", 44)
-    .attr("y", 50);
 };
 const dateParseYear = d3.timeParse("%Y");
 const dateParseTime = d3.timeParse("%M:%S");

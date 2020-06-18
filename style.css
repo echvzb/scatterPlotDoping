@@ -22,6 +22,8 @@ svg {
 }
 .point:hover{
     opacity: 1;
+    stroke: #fff;
+    stroke-width: 2px;
 }
 .doping{
     fill: #137B80; 
