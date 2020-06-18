@@ -64,6 +64,7 @@ const render = (data) => {
     .tickFormat(d3.timeFormat("%Y"));
   const yAxis = d3
     .axisLeft(yScale)
+    .ticks(7)
     .tickFormat(d3.timeFormat("%M:%S"))
     .tickSize(-(inner.width + padding.left));
 
